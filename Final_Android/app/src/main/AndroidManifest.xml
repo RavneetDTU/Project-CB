@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".College.DTU" />
+        <activity android:name=".College.IGDTUW" />
+        <activity android:name=".College.IIIT_D" />
+        <activity android:name=".College.NSIT"></activity>
     </application>
 
 </manifest>
