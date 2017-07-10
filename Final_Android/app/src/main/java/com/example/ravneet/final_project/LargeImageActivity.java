@@ -10,7 +10,7 @@ import org.w3c.dom.Text;
 public class LargeImageActivity extends AppCompatActivity {
 
     ImageView bookimage;
-    TextView sellername,bookname,currentyear,mobilenumber,description,email;
+    TextView sellername,bookname,currentyear,mobilenumber,description,email,price;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +24,6 @@ public class LargeImageActivity extends AppCompatActivity {
         mobilenumber = (TextView) findViewById(R.id.tv_mobilenumber);
         description = (TextView) findViewById(R.id.tv_description);
         email = (TextView) findViewById(R.id.tv_email);
+        price = (TextView) findViewById(R.id.tv_price);
     }
 }

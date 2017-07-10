@@ -5,5 +5,5 @@ package com.example.ravneet.final_project.Interface;
  */
 
 public interface OnItemClickListner {
-    void onItemClick(int itemid);
+    void onItemClick(String emailId);
 }

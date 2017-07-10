@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.ravneet.final_project.Activity.ContactUsActivity;
+import com.example.ravneet.final_project.Activity.HowThisWorkActivity;
 import com.example.ravneet.final_project.College.DTU;
 import com.example.ravneet.final_project.College.IGDTUW;
 import com.example.ravneet.final_project.College.IIIT_D;
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -64,7 +67,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.user_agreemnet) {
+        if (id == R.id.how_this_work) {
+            startActivity(new Intent(MainActivity.this, HowThisWorkActivity.class));
+            return true;
+        }else if(id == R.id.user_agreemnet){
+            return true;
+        }else if(id == R.id.contact_us){
+            startActivity(new Intent(MainActivity.this, ContactUsActivity.class));
             return true;
         }
 

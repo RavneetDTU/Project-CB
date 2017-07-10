@@ -8,6 +8,9 @@ data class Book(
     val bookname:String,
     val sellername:String,
     val mobilenumber:String,
-    val bookid : Int
+    val price:String,
+    val description:String,
+    val collegeandyear : String,
+    val EmailId : String
 
 )

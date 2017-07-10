@@ -59,7 +59,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
             @Override
             public void onClick(View view) {
                 if(onItemClickListner != null){
-                    onItemClickListner.onItemClick(thisbook.getBookid());
+                    onItemClickListner.onItemClick(thisbook.getEmailId());
                 }
             }
         });

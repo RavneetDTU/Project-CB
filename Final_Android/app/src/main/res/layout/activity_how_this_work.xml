@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.example.ravneet.final_project.Activity.HowThisWorkActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:text="This App Helps Students to Solve all kind of their book Problems.
+Post an Advertisement of your OLD/USED book under your College Screen so that your juniors can buy them directly from you. No need to buy and sell to college book shop.
+
+Just Post an Advertisement......AND Thats DONE.
+
+
+"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:text="THANKS FOR YOUR SUPPORT
+        Team BookStore"/>
+
+</LinearLayout>

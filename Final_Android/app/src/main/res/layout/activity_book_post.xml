@@ -37,9 +37,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_mobileno"
             android:hint="+91xxxxxxxxxx" />
+
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Price Of Book"
+            android:id="@+id/et_bookprice"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
             android:hint="Description Of Book"
             android:id="@+id/et_description"/>
         <EditText
