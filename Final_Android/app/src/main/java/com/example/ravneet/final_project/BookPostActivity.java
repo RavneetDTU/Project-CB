@@ -1,5 +1,6 @@
 package com.example.ravneet.final_project;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,7 @@ import com.google.firebase.storage.StorageReference;
 public class BookPostActivity extends AppCompatActivity {
 
     private DatabaseReference databaseReference;
+    MediaPlayer thankyou;
 
     EditText et_bookname,et_yourname,et_email,et_mobileno,et_description,et_college_year,et_price;
     Button btn_post,btn_addimage;
@@ -39,6 +41,15 @@ public class BookPostActivity extends AppCompatActivity {
         btn_post = (Button) findViewById(R.id.btn_finalpost);
         btn_addimage = (Button) findViewById(R.id.btn_addimage);
 
+        final Thread mythread = new Thread(){
+            @Override
+            public void run() {
+                thankyou = MediaPlayer.create(BookPostActivity.this,R.raw.thankyou);
+                thankyou.start();
+            }
+        };
+
+
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
@@ -47,6 +58,7 @@ public class BookPostActivity extends AppCompatActivity {
             public void onClick(View view) {
                 savebookdata();
                 Toast.makeText(getApplicationContext(),"Posting Your ADD....",Toast.LENGTH_LONG).show();
+                mythread.start();
             }
         });
 
